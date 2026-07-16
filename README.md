@@ -11,7 +11,7 @@
 |-------|-----------|
 | Backend | Python 3.11 · Django 5 · Django REST Framework |
 | Auth | JWT via `djangorestframework-simplejwt` |
-| Database | Supabase (PostgreSQL 15) — free tier |
+| Database | PostgreSQL|
 | Frontend | React 18 · Vite · Zustand · React Router v6 |
 | Hosting | Render (backend) · Vercel (frontend) — both free |
 
