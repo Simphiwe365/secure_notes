@@ -1,0 +1,26 @@
+# render.yaml — Deploy Django backend to Render free tier
+services:
+  - type: web
+    name: secure-notes-api
+    env: python
+    buildCommand: "./render-build.sh"
+    startCommand: "gunicorn config.wsgi:application --bind 0.0.0.0:$PORT --workers 2"
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: "secure-notes-api.onrender.com"
+      - key: DB_NAME
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        value: "5432"
+      - key: CORS_ALLOWED_ORIGINS
+        sync: false
