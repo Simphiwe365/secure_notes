@@ -1,4 +1,4 @@
-# SecureNotes — Full-Stack Web Application
+# SecureNotes - Full-Stack Web Application
 
 > **IT Audit Portfolio Project** | Django REST Framework + React + Supabase PostgreSQL
 > Demonstrates application-layer security controls aligned with GITC (General IT Controls) frameworks tested in IT audit engagements.
